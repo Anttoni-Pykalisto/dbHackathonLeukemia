@@ -1,4 +1,4 @@
-@import "stylesheet.css"
+@import "stylesheet.css";
 
 body {
   margin: 0;
@@ -61,6 +61,16 @@ h2 {
 .recent h3{
   font-size:5vh;
   margin-top: 0;
+  margin-bottom: 0;
+}
+
+.buddy{
+  display:inline-flex;
+  font-size: 70px;
+}
+
+.buddy h4{
+  margin:0;
 }
 
 .footer {
