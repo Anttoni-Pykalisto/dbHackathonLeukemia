@@ -1,29 +1,26 @@
 @import "stylesheet.css";
 
-
-.connectNavbar{
-  width:100%;
-  height:5vh;
-  background-color: rgb(90,97,117);
-  display:flex;
+.connectNavbar {
+  width: 100%;
+  height: 5vh;
+  background-color: rgb(90, 97, 117);
+  display: flex;
 }
 
-.navItem{
-  width:33%;
-  height:inherit;
-  vertical-align: middle;
-  text-align:center;
+.navItem {
+  width: 33.3333%;
+  text-align: center;
   flex-direction: row;
 }
 
-.navItem a{
+.navItem a {
   color: white;
-
 }
-.search{
-  width:100%;
+
+.search {
+  width: 100%;
   font-size: 4vh;
-  height:5vh;
+  height: 5vh;
 }
 
 .main {
@@ -34,23 +31,81 @@
   font-size: 60px;
 }
 
+<<<<<<< HEAD
+.buddy-container{
+}
+
 .recent h3{
-  font-size:5vh;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.buddy{
-  display:inline-flex;
-  font-size: 70px;
-}
-
-.buddy h4{
+  font-size: 100px;
   margin:0;
 }
 
 
+.buddy{
+  width: 100%;
+   margin: 0;
+   padding:15px 0;
+   background-color:#000
+   top: 0;
+   left: 0;
+   font-size: 80px;
+   line-height: 100px;
 
+}
+
+.buddy img{
+  border-radius:50%;
+  height:90px;
+  width:90px;
+  padding-left: 0;
+  vertical-align: middle;
+}
+
+.buddy span{
+  padding:0;
+  margin:0;
+  vertical-align: middle;
+
+}
+
+
+.buddy a{
+  color:black;
+  float:right;
+  padding-right: 20px;
+  vertical-align: middle;
+}
+
+.available{
+  border:8px solid green;
+}
+
+.busy{
+ border:8px solid red; 
+}
+
+.suggestions h3{
+  font-size: 100px;
+  margin:0;
+}
+
+=======
+.recent h3 {
+  font-size: 5vh;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.buddy {
+  display: inline-flex;
+  font-size: 70px;
+}
+
+.buddy h4 {
+  margin: 0;
+}
+
+>>>>>>> 7ad7482fade04c966eb95ce17a0b421845119968
 .navIcon {
   width: 25%;
   height: 100%;
@@ -62,7 +117,7 @@
 }
 
 .navIcon a {
-	font-size: 36px;
+  font-size: 36px;
   text-decoration: none;
   position: absolute;
   color: rgb(250, 248, 242);
