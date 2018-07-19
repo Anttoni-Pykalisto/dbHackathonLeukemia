@@ -48,10 +48,10 @@ h2 {
   position: fixed;
   bottom: 0%;
   width: 100%;
-  background-color: rgb(245, 139, 68);
+  background-color: rgb(227, 228, 229);
   opacity: 1;
 	display: flex;
-  color: rgb(250, 248, 242);
+  color: #929393;
 }
 
 .navIcon {
@@ -66,7 +66,7 @@ h2 {
 }
 
 .navIconSVG{
-  padding-top: 5px;
+  padding-top: 10px;
   width: 50%;
   height: 50%;
 }
