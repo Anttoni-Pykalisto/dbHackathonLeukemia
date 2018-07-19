@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="connectStylesheet.css">
+	<link rel="stylesheet" href="css/connectStylesheet.css">
 	<title>Cure Leukaemia</title>
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
@@ -27,7 +27,20 @@ function openPage(evt, page) {
     // Show the current tab, and add an "active" class to the button that opened the tab
     document.getElementById(page).style.display = "block";
     evt.currentTarget.className += " active";
+    if(document.getElementById("chat").style.display=="block"){
+    	document.getElementById("chat").style.display="none";
+    }
 }
+function openChat(){
+	var x=document.getElementById("chat");
+	if (x.style.display === "none") {
+        x.style.display = "block";
+        document.getElementById("convo").style.display="none";
+    } else {
+        x.style.display = "none";
+    }
+}
+
 	</script>
 </head>
 <body>
@@ -55,24 +68,24 @@ function openPage(evt, page) {
 			<div class="buddy">
 				<img src="img_avatar.png" alt="Avatar" class="available">
 				<span>Rachel</span>
-				<a><i class="fa fa-video"></i></a>
-				<a href="chat.html"><i class="fa fa-comment"></i></a>
+				<a><i onclick="openChat()" class="fa fa-comment"></i></a>
 				<a href=""><i class="fa fa-phone"></i></a>
-				
+				<a><i class="fa fa-video"></i></a>
 			</div>
 			<div class="buddy">
 				<img src="img_avatar.png" alt="Avatar" class="busy">
 				<span>Luke</span>
-				<a><i class="fa fa-video"></i></a>
-				<a href="chat.html"><i class="fa fa-comment"></i></a>
+				<a href=""><i class="fa fa-comment"></i></a>
 				<a href=""><i class="fa fa-phone"></i></a>
+				<a><i class="fa fa-video"></i></a>
 			</div>
 			<div class="buddy">
 				<img src="img_avatar.png" alt="Avatar" class="available">
 				<span>Thomas</span>
-				<a><i class="fa fa-video"></i></a>
-				<a href="chat.html"><i class="fa fa-comment"></i></a>
+
+				<a href="l"><i class="fa fa-comment"></i></a>
 				<a href=""><i class="fa fa-phone"></i></a>
+				<a><i class="fa fa-video"></i></a>
 			</div>
 		</div>
 		<div class="suggestions">
@@ -125,19 +138,38 @@ function openPage(evt, page) {
 			</div>
 		</div>
 	</div>
+	<div id="chat">
+		<div class="chatPerson">
+	        <h2>Rachel</h2>
+	    </div>
+	    <div>
+	        <br><br><br><br><br>
+	        <img src="assets/message_mockup.jpg" width="100%"/>
+	        <img src="assets/message_mockup.jpg" width="100%"/>
+	    </div>
+	   </div>
 	<div class="footer">
 		<div class="navIcon">
-			<a href="inspire.html">Inspire</a>
+			<div> <a href="inspire.html"><img class="navIconSVG" src="assets/inspire.svg" alt=""> </a></div>
+			<div> <span class="navIconText">Inspire</span></div>
+
+		</div>
+
+		<div class="navIcon">
+			<div> <a href="connect.html"><img class="navIconSVG" src="assets/connect.svg" alt=""> </a></div>
+			<div> <span class="navIconText">Connect</span></div>
+		</div>
+
+		<div class="navIcon">
+			<div> <a href="advice.html"><img class="navIconSVG" src="assets/advice.svg" alt=""> </a></div>
+			<div> <span class="navIconText">Advice</span></div>
+
 		</div>
 		<div class="navIcon">
-			<a href="connect.html">Connect</a>
-		</div>
-		<div class="navIcon">
-			<a href="advice.html">Advice</a>
-		</div>
-		<div class="navIcon">
-			<a href="me.html">Me</a>
+			<div> <a href="me.html"><img class="navIconSVG" src="assets/me.svg" alt=""> </a></div>
+			<div> <span class="navIconText">Connect</span></div>
 		</div>
 	</div>
+
 </body>
 </html>

@@ -17,13 +17,13 @@
 	</div>
 	<div class="connectNavbar">
 		<div class="navItem">
-			<a href="">Contacts</a>
+			<button class="tablinks" onclick="openPage(event, 'contacts')">Contacts</button>
 		</div>
 		<div class="navItem">
-			<a href="">Convo</a>
+			<button class="tablinks" onclick="openPage(event, 'convo')">Convo</button>
 		</div>
 		<div class="navItem">
-			<a href="">Community</a>
+			<button class="tablinks" onclick="openPage(event, 'community')">Community</button>
 		</div>
 	</div>
 	<div class="chatPerson">
@@ -36,16 +36,24 @@
     </div>
 	<div class="footer">
 		<div class="navIcon">
-			<a href="inspire.html">Inspire</a>
+			<div> <a href="inspire.html"><img class="navIconSVG" src="assets/inspire.svg" alt=""> </a></div>
+			<div> <span class="navIconText">Inspire</span></div>
+
+		</div>
+
+		<div class="navIcon">
+			<div> <a href="connect.html"><img class="navIconSVG" src="assets/connect.svg" alt=""> </a></div>
+			<div> <span class="navIconText">Connect</span></div>
+		</div>
+
+		<div class="navIcon">
+			<div> <a href="advice.html"><img class="navIconSVG" src="assets/advice.svg" alt=""> </a></div>
+			<div> <span class="navIconText">Advice</span></div>
+
 		</div>
 		<div class="navIcon">
-			<a href="connect.html">Connect</a>
-		</div>
-		<div class="navIcon">
-			<a href="advice.html">Advice</a>
-		</div>
-		<div class="navIcon">
-			<a href="me.html">Me</a>
+			<div> <a href="me.html"><img class="navIconSVG" src="assets/me.svg" alt=""> </a></div>
+			<div> <span class="navIconText">Connect</span></div>
 		</div>
 	</div>
 </body>

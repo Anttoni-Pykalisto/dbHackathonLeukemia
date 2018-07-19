@@ -30,6 +30,11 @@
     font-size: 3vh;
 }
 
+.navItem button.active{
+  text-decoration: underline;
+}
+
+
 .search {
   width: 100%;
   font-size: 4vh;
@@ -59,6 +64,9 @@
   margin:0;
 }
 
+#chat{
+  display:none;
+}
 
 .buddy{
   width: 100%;
@@ -69,7 +77,7 @@
    left: 0;
    font-size: 80px;
    line-height: 100px;
-
+   height:100px;
 }
 
 .buddy img{
@@ -89,10 +97,12 @@
 
 .buddy a{
   color:black;
-  float:right;
   padding-right: 20px;
   vertical-align: middle;
 }
+
+
+
 
 .available{
   border:8px solid green;
@@ -129,7 +139,7 @@
 }
 
 .thread h4{
-  font-size: 90px;
+  font-size: 85px;
   margin:0;
 }
 
