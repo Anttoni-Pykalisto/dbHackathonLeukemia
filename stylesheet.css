@@ -43,4 +43,5 @@ body {
 
 .navIcon a {
 	font-size: 36px;
+  text-decoration: none;
 }
