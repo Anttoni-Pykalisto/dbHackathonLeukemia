@@ -34,22 +34,39 @@
   font-size: 60px;
 }
 
+.buddy-container{
+}
+
 .recent h3{
-  font-size:5vh;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.buddy{
-  display:inline-flex;
-  font-size: 70px;
-}
-
-.buddy h4{
+  font-size: 100px;
   margin:0;
 }
 
 
+.buddy{
+  width: 100%;
+   margin: 0;
+   padding:15px 0;
+   background-color:#000
+   top: 0;
+   left: 0;
+   font-size: 80px;
+}
+
+.buddy span{
+  padding-left: 40px;
+}
+
+
+.buddy i{
+  float:right;
+  padding-right: 20px;
+}
+
+.suggestions h3{
+  font-size: 100px;
+  margin:0;
+}
 
 .navIcon {
   width: 25%;
