@@ -51,16 +51,39 @@
    top: 0;
    left: 0;
    font-size: 80px;
+   line-height: 100px;
+
+}
+
+.buddy img{
+  border-radius:50%;
+  height:90px;
+  width:90px;
+  padding-left: 0;
+  vertical-align: middle;
 }
 
 .buddy span{
-  padding-left: 40px;
+  padding:0;
+  margin:0;
+  vertical-align: middle;
+
 }
 
 
-.buddy i{
+.buddy a{
+  color:black;
   float:right;
   padding-right: 20px;
+  vertical-align: middle;
+}
+
+.available{
+  border:8px solid green;
+}
+
+.busy{
+ border:8px solid red; 
 }
 
 .suggestions h3{
