@@ -15,6 +15,8 @@ body {
 
 /* Colour for Links rgb(90,97,117)*/
 
+
+
 .header {
   height: 10vh;
   background-color: rgb(245, 139, 68);
@@ -27,7 +29,7 @@ body {
 }
 
 h2 {
-  padding: 0;
+  margin: 0;
 	text-align: center;
 	font-size: 50px;
   text-align: center;
@@ -49,6 +51,7 @@ h2 {
   background-color: rgb(245, 139, 68);
   opacity: 1;
 	display: flex;
+  color: rgb(250, 248, 242);
 }
 
 .navIcon {
@@ -57,8 +60,9 @@ h2 {
   text-align: center;
   vertical-align: middle;
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .navIcon a {
@@ -66,6 +70,7 @@ h2 {
   text-decoration: none;
   position: absolute;
   color: rgb(250, 248, 242);
+
 }
 
 .advice img {
@@ -85,4 +90,23 @@ h2 {
   justify-content: space-around;
   padding: 0 50px 0 50px;
   align-items: center;
+}
+
+.advice-top {
+  width: 100%;
+  height: 30vh;
+  top: 0;
+  background: grey;
+}
+
+.advice-middle {
+  background: blue;
+  width: 100%;
+  height: 30vh;
+}
+
+.advice-bottom {
+  background: purple;
+  width: 100%;
+  height: 30vh;
 }
