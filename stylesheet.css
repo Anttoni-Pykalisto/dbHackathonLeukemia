@@ -65,13 +65,23 @@ h2 {
   justify-content: space-around;
 }
 
-.navIcon a {
-	font-size: 36px;
-  text-decoration: none;
-  position: absolute;
-  color: rgb(250, 248, 242);
-
+.navIconSVG{
+  padding-top: 5px;
+  width: 50%;
+  height: 50%;
 }
+
+.navIconText{
+  font-size: 36px;
+  text-decoration: none;
+}
+/*.navIcon a {*/
+	/*font-size: 36px;*/
+  /*text-decoration: none;*/
+  /*position: absolute;*/
+  /*color: rgb(250, 248, 242);*/
+
+/*}*/
 
 .advice img {
   width: 320px;
