@@ -1,6 +1,43 @@
 @import "stylesheet.css";
 
-.row2{
+.row1, .row2, .row3, .row4, .row5, .row6 {
     display: flex;
+}
 
+.row1 {
+  width: 100%;
+  height: 20vh;
+  background-color: blue;
+}
+
+.row2 {
+  width: 100%;
+  height: 20vh;
+}
+
+.row2 * {
+  width: 50%;
+}
+
+.row2-item1 {
+  background: green;
+}
+
+.row2-item2 {
+  background: red;
+}
+
+.row3 {
+  height: 17vh;
+  background: grey;
+}
+
+.row4 {
+  height: 17vh;
+  background: purple;
+}
+
+.row5 {
+  height: 17vh;
+  background: grey;
 }
