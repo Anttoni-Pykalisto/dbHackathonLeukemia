@@ -1,29 +1,5 @@
 @import "stylesheet.css";
 
-body {
-  margin: 0;
-  padding: 0;
-  background-color: rgb(250, 248, 242);
-}
-
-/* Colour for Links rgb(90,97,117)*/
-
-.header {
-  height: 10vh;
-  background-color: rgb(245, 139, 68);
-  width: 100%;
-  top: 0%;
-}
-
-.logo, .name {
-  display: inline-block;
-}
-
-h2 {
-  padding: 0;
-	text-align: center;
-	font-size: 50px;
-}
 
 .connectNavbar{
   width:100%;
@@ -73,15 +49,7 @@ h2 {
   margin:0;
 }
 
-.footer {
-  height: 10vh;
-  position: fixed;
-  bottom: 0%;
-  width: 100%;
-  background-color: rgb(245, 139, 68);
-  opacity: 1;
-	display: flex;
-}
+
 
 .navIcon {
   width: 25%;
