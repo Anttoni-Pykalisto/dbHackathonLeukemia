@@ -103,6 +103,11 @@ h2 {
   align-items: center;
 }
 
+.advice-top h2, .advice-bottom h2 {
+  color: #fff;
+  font-size: 100px;
+}
+
 .advice-top {
   width: 100%;
   height: 30vh;
@@ -111,9 +116,14 @@ h2 {
 }
 
 .advice-middle {
-  background: blue;
   width: 100%;
   height: 30vh;
+}
+
+.advice-middle p {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 30px;
 }
 
 .advice-bottom {
