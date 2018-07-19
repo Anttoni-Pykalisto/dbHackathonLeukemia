@@ -4,12 +4,31 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="connectStylesheet.css">
 	<title>Cure Leukaemia</title>
-<<<<<<< HEAD
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-=======
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 
->>>>>>> 7ad7482fade04c966eb95ce17a0b421845119968
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<script>
+function openPage(evt, page) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(page).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+	</script>
 </head>
 <body>
 	<div class="header">
@@ -18,23 +37,23 @@
 	</div>
 	<div class="connectNavbar">
 		<div class="navItem">
-			<a href="">Contacts</a>
+			<button class="tablinks" onclick="openPage(event, 'contacts')">Contacts</button>
 		</div>
 		<div class="navItem">
-			<a href="">Convo</a>
+			<button class="tablinks" onclick="openPage(event, 'convo')">Convo</button>
 		</div>
 		<div class="navItem">
-			<a href="">Community</a>
+			<button class="tablinks" onclick="openPage(event, 'community')">Community</button>
 		</div>
 	</div>
 	<form class="searchBar">
 		<input type="text" class="search" placeholder="Search">
 	</form>
-	<div class="buddyContainer">
+	<div class="tabcontent" id="convo">
 		<div class="recent">
 			<h3>Recent:</h3>
 			<div class="buddy">
-				<img src="img_avatar.jpg" alt="Avatar" class="available">
+				<img src="img_avatar.png" alt="Avatar" class="available">
 				<span>Rachel</span>
 				<a><i class="fa fa-video"></i></a>
 				<a href="chat.html"><i class="fa fa-comment"></i></a>
@@ -42,14 +61,14 @@
 				
 			</div>
 			<div class="buddy">
-				<img src="img_avatar.jpg" alt="Avatar" class="busy">
+				<img src="img_avatar.png" alt="Avatar" class="busy">
 				<span>Luke</span>
 				<a><i class="fa fa-video"></i></a>
 				<a href="chat.html"><i class="fa fa-comment"></i></a>
 				<a href=""><i class="fa fa-phone"></i></a>
 			</div>
 			<div class="buddy">
-				<img src="img_avatar.jpg" alt="Avatar" class="available">
+				<img src="img_avatar.png" alt="Avatar" class="available">
 				<span>Thomas</span>
 				<a><i class="fa fa-video"></i></a>
 				<a href="chat.html"><i class="fa fa-comment"></i></a>
@@ -59,14 +78,50 @@
 		<div class="suggestions">
 			<h3>Suggestions: </h3>
 			<div class="buddy">
-				<img src="img_avatar.jpg" alt="Avatar">
+				<img src="img_avatar.png" alt="Avatar">
 				<span>Anderson</span>
 				<a href=""><i class="fa fa-plus"></i></a>
 			</div>
 			<div class="buddy">
-				<img src="img_avatar.jpg" alt="Avatar">
+				<img src="img_avatar.png" alt="Avatar">
 				<span>Donald</span>
 				<a href=""><i class="fa fa-plus"></i></a>
+			</div>
+		</div>
+	</div>
+	<div class="tabcontent" id="contacts">
+		<ul class="contactList">
+			<li>Angela</li>
+			<li>Bob</li>
+			<li>Simon</li>
+			<li>Pierre</li>
+		</ul>
+	</div>
+	<div class="tabcontent" id="community">
+		<div class="forum">
+			<div class="thread">
+				<h4>Do I look like I have leukaemia?</h4>
+				<div class="threadDetails">
+					<span>Started by: Sally</span><i class="fa fa-comments">99</i>
+				</div>
+			</div>
+			<div class="thread">
+				<h4>Shaving Bald for CureLeukemia!</h4>
+				<div class="threadDetails">
+					<span>Started by: Eustace</span><i class="fa fa-comments">50</i>
+				</div>
+			</div>
+			<div class="thread">
+				<h4>Do I have abnormal white blood cell count?</h4>
+				<div class="threadDetails">
+					<span>Started by: Anthony</span><i class="fa fa-comments">30</i>
+				</div>
+			</div>
+			<div class="thread">
+				<h4>Life Post Transplant</h4>
+				<div class="threadDetails">
+					<span>Started by: I'm running out of names</span><i class="fa fa-comments">150</i>
+				</div>
 			</div>
 		</div>
 	</div>
