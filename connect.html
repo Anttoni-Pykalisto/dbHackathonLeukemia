@@ -50,7 +50,7 @@ function openChat(){
 	</div>
 	<div class="connectNavbar">
 		<div class="navItem">
-			<button class="tablinks" onclick="openPage(event, 'contacts')">Contacts</button>
+			<button class="tablinks" onclick="openPage(event, 'contacts')">Discover</button>
 		</div>
 		<div class="navItem">
 			<button class="tablinks" onclick="openPage(event, 'convo')">Convo</button>
@@ -68,7 +68,7 @@ function openChat(){
 			<div class="buddy">
 				<img src="img_avatar.png" alt="Avatar" class="available">
 				<span>Rachel</span>
-				<a><i onclick="openChat()" class="fa fa-comment"></i></a>
+				<a><i onclick="openChat()" class="fa fa-comment"></i><i onclick="openChat()" class="fa fa-exclamation"></i></a>
 				<a href=""><i class="fa fa-phone"></i></a>
 				<a><i class="fa fa-video"></i></a>
 			</div>
@@ -80,34 +80,38 @@ function openChat(){
 				<a><i class="fa fa-video"></i></a>
 			</div>
 			<div class="buddy">
-				<img src="img_avatar.png" alt="Avatar" class="available">
+				<img src="img_avatar.png" alt="Avatar" class="offline">
 				<span>Thomas</span>
-
+				<a href=""><i class="fa fa-comment"></i></a>
+				<a href=""><i class="fa fa-phone"></i></a>
+				<a><i class="fa fa-video"></i></a>
+			</div>
+		</div>
+		<div class="groups">
+			<h3>Groups: </h3>
+			<div class="buddy">
+				<img src="group_avatar.png" alt="Avatar" class="">
+				<span>Family</span>
+				<a href="l"><i class="fa fa-comment"></i></a>
+				<a href=""><i class="fa fa-phone"></i></a>
+				<a><i class="fa fa-video"></i></a>
+			</div>
+			<div class="buddy">
+				<img src="group_avatar.png" alt="Avatar" class="">
+				<span>Neighbourhood</span>
 				<a href="l"><i class="fa fa-comment"></i></a>
 				<a href=""><i class="fa fa-phone"></i></a>
 				<a><i class="fa fa-video"></i></a>
 			</div>
 		</div>
-		<div class="suggestions">
-			<h3>Suggestions: </h3>
-			<div class="buddy">
-				<img src="img_avatar.png" alt="Avatar">
-				<span>Anderson</span>
-				<a href=""><i class="fa fa-plus"></i></a>
-			</div>
-			<div class="buddy">
-				<img src="img_avatar.png" alt="Avatar">
-				<span>Donald</span>
-				<a href=""><i class="fa fa-plus"></i></a>
-			</div>
-		</div>
 	</div>
 	<div class="tabcontent" id="contacts">
+		<h3>People Near You</h3>
 		<ul class="contactList">
-			<li>Angela</li>
-			<li>Bob</li>
-			<li>Simon</li>
-			<li>Pierre</li>
+			<li><img src="img_avatar.png" alt="Avatar" class="profile"><a href="">Angela</a> <i class="fa fa-plus"></i></li>
+			<li><img src="img_avatar.png" alt="Avatar" class="profile"><a href="">Bob</a> <i class="fa fa-plus"></i></li>
+			<li><img src="img_avatar.png" alt="Avatar" class="profile"><a href="">Simon</a> <i class="fa fa-plus"></i></li>
+			<li><img src="img_avatar.png" alt="Avatar" class="profile"><a href="">Pierre</a> <i class="fa fa-plus"></i></li>
 		</ul>
 	</div>
 	<div class="tabcontent" id="community">
@@ -133,7 +137,7 @@ function openChat(){
 			<div class="thread">
 				<h4>Life Post Transplant</h4>
 				<div class="threadDetails">
-					<span>Started by: I'm running out of names</span><i class="fa fa-comments">150</i>
+					<span>Started by: Mary</span><i class="fa fa-comments">150</i>
 				</div>
 			</div>
 		</div>

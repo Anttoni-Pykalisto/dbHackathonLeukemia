@@ -54,9 +54,42 @@
   display: none;
 }
 
+#contacts h3{
+  font-size:100px;
+  margin:0;
+}
+
 .contactList{
   font-size: 80px;
   margin:20px;
+  list-style-type: none;
+}
+
+.contactList li{
+  vertical-align: middle;
+  margin-bottom: 15px;
+}
+
+.contactList a{
+  vertical-align: middle;
+  color:black;
+  text-decoration: none;
+}
+
+.contactList a:hover{
+  text-decoration: underline;
+}
+
+.contactList i{
+  vertical-align: middle;
+}
+
+.contactList .profile{
+  border-radius:50%;
+  height:90px;
+  width:90px;
+  margin-right: 30px;
+  vertical-align: middle;
 }
 
 .recent h3{
@@ -97,7 +130,7 @@
 
 .buddy a{
   color:black;
-  padding-right: 20px;
+  padding-left:30px;
   vertical-align: middle;
 }
 
@@ -112,7 +145,11 @@
  border:8px solid red; 
 }
 
-.suggestions h3{
+.offline{
+ border:8px solid gray; 
+}
+
+.groups h3{
   font-size: 100px;
   margin:0;
 }
