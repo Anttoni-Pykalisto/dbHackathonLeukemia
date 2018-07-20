@@ -140,7 +140,7 @@ h2 {
 .event {
   background-color: #fff;
   margin-bottom: 30px;
-  border-bottom: 4px dotted rgb(51,51,51);
+  border-bottom: 4px rgb(51,51,51) dotted;
   padding-bottom: 18px;
 }
 
