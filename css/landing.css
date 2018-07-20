@@ -1,0 +1,17 @@
+.user{
+    background-color: rgb(250,249,245);
+}
+
+.quote{
+    helght: 80vh;
+    background-image: url("../assets/quotebackground.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.quote-text{
+
+    height: 70vh;
+    font-size: 60px;
+}
