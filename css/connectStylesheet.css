@@ -31,9 +31,14 @@
 }
 
 .navItem button.active{
-  text-decoration: underline;
+  border-bottom: 10px solid white;
 }
 
+.navItem img{
+  height:90px;
+  width:90px;
+  margin:0;
+}
 
 .search {
   width: 100%;
@@ -119,6 +124,7 @@
   width:90px;
   padding-left: 0;
   vertical-align: middle;
+  margin-right:15px;
 }
 
 .buddy span{
