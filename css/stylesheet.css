@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(250, 248, 242);
+  background-color: #fff;
 }
 
 * {
@@ -33,6 +33,7 @@ h2 {
 	text-align: center;
 	font-size: 50px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .main {
@@ -102,6 +103,11 @@ h2 {
   align-items: center;
 }
 
+.advice-top h2, .advice-bottom h2 {
+  color: #fff;
+  font-size: 100px;
+}
+
 .advice-top {
   width: 100%;
   height: 30vh;
@@ -110,13 +116,38 @@ h2 {
 }
 
 .advice-middle {
-  background: blue;
   width: 100%;
   height: 30vh;
+}
+
+.advice-middle p {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 30px;
 }
 
 .advice-bottom {
   background: purple;
   width: 100%;
   height: 30vh;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+}
+
+.event {
+  background-color: #fff;
+  margin-bottom: 30px
+}
+
+.event > * {
+  margin: 2px 0px 5px 20px;
+  padding: 0;
+}
+
+.event h3 {
+  color: red;
+  text-transform: uppercase;
 }
