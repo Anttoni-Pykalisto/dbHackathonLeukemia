@@ -3,10 +3,12 @@
 .me-main{
     height: 88vh;
     background-color: white;
+    text-align: center;
 }
 
 .me-row1, .me-row2{
     display: flex;
+    text-align: center;
 }
 
 .row1-left, .row1-right{
@@ -17,7 +19,6 @@
 .resultsImg{
     width: 95%;
     height: 90%;
-
 }
 
 .description{
