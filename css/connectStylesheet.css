@@ -1,5 +1,4 @@
 @import "stylesheet.css";
-
 .connectNavbar {
   width: 100%;
   height: 5vh;
@@ -21,30 +20,30 @@
 .navItem button {
   color: white;
   background-color: Transparent;
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden;
-    outline:none;
-    transition: 0.3s;
-    font-size: 3vh;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  transition: 0.3s;
+  font-size: 3vh;
 }
 
-.navItem button.active{
+.navItem button.active {
   border-bottom: 10px solid white;
 }
 
-.navItem img{
-  height:90px;
-  width:90px;
-  margin:0;
+.navItem img {
+  height: 90px;
+  width: 90px;
+  margin: 0;
 }
 
 .search {
   width: 100%;
   font-size: 4vh;
   height: 5vh;
-  border:1px solid black;
+  border: 1px solid black;
 }
 
 .main {
@@ -55,120 +54,109 @@
   font-size: 60px;
 }
 
-.tabcontent{
+.tabcontent {
   display: none;
 }
 
-#contacts h3{
-  font-size:100px;
-  margin:0;
+#contacts h3 {
+  font-size: 100px;
+  margin: 0;
 }
 
-.contactList{
-  font-size: 70px;
-  margin:20px;
+.contactList {
+  font-size: 80px;
+  margin: 20px;
   list-style-type: none;
 }
 
-.contactList li{
+.contactList li {
   vertical-align: middle;
   margin-bottom: 15px;
   margin-left:0;
 }
 
-.contactList a{
+.contactList a {
   vertical-align: middle;
-  color:black;
+  color: black;
   text-decoration: none;
 }
 
-.contactList a:hover{
+.contactList a:hover {
   text-decoration: underline;
 }
 
-.contactList i{
+.contactList i {
   vertical-align: middle;
 }
 
-.contactList .profile{
-  height:150px;
-  width:150px;
-  margin-right: 15px;
+.contactList .profile {
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+  margin-right: 30px;
   vertical-align: middle;
 }
 
-.recent h3{
+.recent h3 {
   font-size: 100px;
-  margin:0;
-}
-
-#chat{
-  display:none;
-}
-
-.buddy{
-  width: 100%;
-   margin: 0;
-   padding:15px 0;
-   background-color:#000
-   top: 0;
-   left: 0;
-   font-size: 70px;
-   line-height: 100px;
-   height:100px;
-}
-
-.buddy img{
-  border-radius:50%;
-  height:90px;
-  width:90px;
-  padding-left: 0;
-  vertical-align: middle;
-  margin-right:15px;
-}
-
-.buddy span{
-  padding:0;
-  margin:0;
-  vertical-align: middle;
-}
-
-
-.buddy a{
-  color:black;
-  padding-left:30px;
-  vertical-align: middle;
-}
-
-.buddy h4 {
   margin: 0;
 }
 
-
-.available{
-  border:8px solid green;
+#chat {
+  display: none;
 }
 
-.busy{
- border:8px solid red; 
+.buddy {
+  width: 100%;
+  margin: 0;
+  padding: 15px 0;
+  background-color: #000 top: 0;
+  left: 0;
+  font-size: 80px;
+  line-height: 100px;
+  height: 100px;
 }
 
-.offline{
- border:8px solid gray; 
+.buddy img {
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+  padding-left: 0;
+  vertical-align: middle;
+  margin-right: 15px;
 }
 
-
-.backwardImg{
-  height:60px;
-  width:60px;
+.buddy span {
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
 }
-.groups h3{
+
+.buddy a {
+  color: black;
+  padding-left: 30px;
+  vertical-align: middle;
+}
+
+.available {
+  border: 8px solid green;
+}
+
+.busy {
+  border: 8px solid red;
+}
+
+.offline {
+  border: 8px solid gray;
+}
+
+.groups h3 {
   font-size: 100px;
-  margin:0;
+  margin: 0;
 }
 
-
-.recent h3{
+.recent h3 {
+  font-size: 5vh;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -179,26 +167,23 @@
   margin-top: 18px;
 }
 
-.thread{
-  background-color: #fff;
-  margin-bottom: 30px;
-  border-bottom: 4px rgb(51,51,51) dotted;
-  padding-bottom: 18px;
+.thread {
+  max-width: 100%;
+  border: 1px solid black;
 }
 
-.thread h4{
-  color: rgb(197, 46, 39);
+.thread h4 {
   font-size: 85px;
-  margin:0;
+  margin: 0;
 }
 
-.thread span{
+.thread span {
   font-size: 40px;
-  margin:0;
+  margin: 0;
 }
 
-.thread i{
-  font-size:40px;
-  float:right;
-  margin-right:30px;
+.thread i {
+  font-size: 40px;
+  float: right;
+  margin-right: 30px;
 }
