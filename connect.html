@@ -7,7 +7,7 @@
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-	<script>
+<script>
 function openPage(evt, page) {
     // Declare all variables
     var i, tabcontent, tablinks;
@@ -44,17 +44,17 @@ function openChat(){
 function load(page){
 	openPage(event,page);
 	tablinks = document.getElementsByClassName("tablinks");
-	tablinks[0].classList.add("active");
+	if (page == 'contacts'){
+		tablinks[0].classList.add("active");
+	}else if(page == 'convo'){
+		tablinks[1].classList.add("active");
+	}
 }
 
 
 	</script>
 </head>
 <body onload="load('contacts')">
-	<div class="header">
-			<img src="" alt="">
-			<h2>CURE LUEKAEMIA</h2>
-	</div>
 	<div class="connectNavbar">
 		<div class="navItem">
 			<button class="tablinks" onclick="openPage(event, 'contacts')"><i class="fa fa-globe"></i></button>
@@ -74,7 +74,7 @@ function load(page){
 				<img src="img_avatar.png" alt="Avatar" class="available">
 				<span>Rachel</span>
 				<a><i onclick="openChat()" class="fa fa-comment-alt"></i><i onclick="openChat()" class="fa fa-exclamation" style="color:red"></i></a>
-				<a href=""><i class="fa fa-phone" style="color:green"></i></a>
+				<a href="tel:+447895329777"><i class="fa fa-phone" style="color:green"></i></a>
 				<a><i class="fa fa-video"></i></a>
 			</div>
 			<div class="buddy">
@@ -103,7 +103,7 @@ function load(page){
 			</div>
 			<div class="buddy">
 				<img src="group_avatar.png" alt="Avatar" class="">
-				<span>Neighbourhood</span>
+				<span>Friends</span>
 				<a href="l"><i class="fa fa-comment-alt"></i></a>
 				<a href=""><i class="fa fa-phone" style="color:green"></i></a>
 				<a><i class="fa fa-video"></i></a>
@@ -111,7 +111,7 @@ function load(page){
 		</div>
 	</div>
 	<div class="tabcontent" id="contacts">
-		<h3>People Near You</h3>
+		<h3>Suggestions</h3>
 		<ul class="contactList">
 			<li><img src="img_avatar.png" alt="Avatar" class="profile"><a href="">Angela</a> <i class="fa fa-plus"></i></li>
 			<li><img src="img_avatar.png" alt="Avatar" class="profile"><a href="">Bob</a> <i class="fa fa-plus"></i></li>
