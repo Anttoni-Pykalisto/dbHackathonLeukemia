@@ -174,14 +174,21 @@
   margin-bottom: 0;
 }
 
-
+.forum {
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+}
 
 .thread{
-  max-width:100%;
-  border:1px solid black;
+  background-color: #fff;
+  margin-bottom: 30px;
+  border-bottom: 4px rgb(51,51,51) dotted;
+  padding-bottom: 18px;
 }
 
 .thread h4{
+  color: rgb(197, 46, 39);
   font-size: 85px;
   margin:0;
 }
