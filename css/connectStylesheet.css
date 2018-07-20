@@ -91,9 +91,8 @@
 }
 
 .contactList .profile{
-  border-radius:50%;
-  height:90px;
-  width:90px;
+  height:150px;
+  width:150px;
   margin-right: 15px;
   vertical-align: middle;
 }

@@ -44,7 +44,11 @@ function openChat(){
 function load(page){
 	openPage(event,page);
 	tablinks = document.getElementsByClassName("tablinks");
-	tablinks[0].classList.add("active");
+	if (page == 'contacts'){
+		tablinks[0].classList.add("active");
+	}else if(page == 'convo'){
+		tablinks[1].classList.add("active");
+	}
 }
 
 
@@ -74,7 +78,7 @@ function load(page){
 				<img src="img_avatar.png" alt="Avatar" class="available">
 				<span>Rachel</span>
 				<a><i onclick="openChat()" class="fa fa-comment-alt"></i><i onclick="openChat()" class="fa fa-exclamation" style="color:red"></i></a>
-				<a href=""><i class="fa fa-phone" style="color:green"></i></a>
+				<a href="tel:+447895329777"><i class="fa fa-phone" style="color:green"></i></a>
 				<a><i class="fa fa-video"></i></a>
 			</div>
 			<div class="buddy">
@@ -111,7 +115,7 @@ function load(page){
 		</div>
 	</div>
 	<div class="tabcontent" id="contacts">
-		<h3>People Near You</h3>
+		<h3>Suggestions</h3>
 		<ul class="contactList">
 			<li><img src="img_avatar.png" alt="Avatar" class="profile"><a href="">Angela</a> <i class="fa fa-plus"></i></li>
 			<li><img src="img_avatar.png" alt="Avatar" class="profile"><a href="">Bob</a> <i class="fa fa-plus"></i></li>
