@@ -41,8 +41,8 @@ function openChat(){
     }
 }
 
-function load(){
-	openPage(event,'contacts');
+function load(page){
+	openPage(event,page);
 	tablinks = document.getElementsByClassName("tablinks");
 	tablinks[0].classList.add("active");
 }
@@ -50,11 +50,7 @@ function load(){
 
 	</script>
 </head>
-<body onload="load()">
-	<div class="header">
-			<img src="" alt="">
-			<h2>CURE LUEKAEMIA</h2>
-	</div>
+<body onload="load('contacts')">
 	<div class="connectNavbar">
 		<div class="navItem">
 			<button class="tablinks" onclick="openPage(event, 'contacts')"><i class="fa fa-globe"></i></button>
@@ -73,22 +69,22 @@ function load(){
 			<div class="buddy">
 				<img src="img_avatar.png" alt="Avatar" class="available">
 				<span>Rachel</span>
-				<a><i onclick="openChat()" class="fa fa-comment-alt"></i><i onclick="openChat()" class="fa fa-exclamation"></i></a>
-				<a href=""><i class="fa fa-phone"></i></a>
+				<a><i onclick="openChat()" class="fa fa-comment-alt"></i><i onclick="openChat()" class="fa fa-exclamation" style="color:red"></i></a>
+				<a href=""><i class="fa fa-phone" style="color:green"></i></a>
 				<a><i class="fa fa-video"></i></a>
 			</div>
 			<div class="buddy">
 				<img src="img_avatar.png" alt="Avatar" class="busy">
 				<span>Luke</span>
 				<a href=""><i class="fa fa-comment-alt"></i></a>
-				<a href=""><i class="fa fa-phone"></i></a>
+				<a href=""><i class="fa fa-phone" style="color:green"></i></a>
 				<a><i class="fa fa-video"></i></a>
 			</div>
 			<div class="buddy">
 				<img src="img_avatar.png" alt="Avatar" class="offline">
 				<span>Thomas</span>
 				<a href=""><i class="fa fa-comment-alt"></i></a>
-				<a href=""><i class="fa fa-phone"></i></a>
+				<a href=""><i class="fa fa-phone" style="color:green"></i></a>
 				<a><i class="fa fa-video"></i></a>
 			</div>
 		</div>
@@ -98,20 +94,20 @@ function load(){
 				<img src="group_avatar.png" alt="Avatar" class="">
 				<span>Family</span>
 				<a href="l"><i class="fa fa-comment-alt"></i></a>
-				<a href=""><i class="fa fa-phone"></i></a>
+				<a href=""><i class="fa fa-phone" style="color:green"></i></a>
 				<a><i class="fa fa-video"></i></a>
 			</div>
 			<div class="buddy">
 				<img src="group_avatar.png" alt="Avatar" class="">
-				<span>Neighbourhood</span>
+				<span>Friends</span>
 				<a href="l"><i class="fa fa-comment-alt"></i></a>
-				<a href=""><i class="fa fa-phone"></i></a>
+				<a href=""><i class="fa fa-phone" style="color:green"></i></a>
 				<a><i class="fa fa-video"></i></a>
 			</div>
 		</div>
 	</div>
 	<div class="tabcontent" id="contacts">
-		<h3>People Near You</h3>
+		<h3>Suggestions</h3>
 		<ul class="contactList">
 			<li><img src="img_avatar.png" alt="Avatar" class="profile"><a href="">Angela</a> <i class="fa fa-plus"></i></li>
 			<li><img src="img_avatar.png" alt="Avatar" class="profile"><a href="">Bob</a> <i class="fa fa-plus"></i></li>
@@ -149,6 +145,9 @@ function load(){
 	</div>
 	<div id="chat">
 		<div class="chatPerson">
+			<div class="backward">
+    		<img onClick="load('convo')" class="backwardImg" src="assets/backward.svg" alt="">
+</div>
 	        <h2>Rachel</h2>
 	    </div>
 	    <div>
