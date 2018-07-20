@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/barchart.css">
+    <title>Cure Leukaemia</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+<body>
+<div class="backward">
+    <a href="me.html"><img class="backwardImg" src="assets/backward.svg" alt=""></a>
+
+</div>
+
+<div id="barchart">
+
+</div>
+
+<div id="linechart">
+
+</div>
+<div class="footer">
+    <div class="navIcon">
+        <div> <a href="inspire.html"><img class="navIconSVG" src="assets/inspire.svg" alt=""> </a></div>
+        <div> <span class="navIconText">Inspire</span></div>
+
+    </div>
+
+    <div class="navIcon">
+        <div> <a href="connect.html"><img class="navIconSVG" src="assets/connect.svg" alt=""> </a></div>
+        <div> <span class="navIconText">Connect</span></div>
+    </div>
+
+    <div class="navIcon">
+        <div> <a href="advice.html"><img class="navIconSVG" src="assets/advice.svg" alt=""> </a></div>
+        <div> <span class="navIconText">Advice</span></div>
+
+    </div>
+    <div class="navIcon">
+        <div> <a href="me.html"><img class="navIconSVG" src="assets/me-selected.svg" alt=""> </a></div>
+        <div> <span class="navIconText">Me</span></div>
+    </div>
+</div>
+
+
+<script language="JavaScript">
+    $(document).ready(function() {
+        var chart = {
+            type: 'column'
+        };
+        var title = {
+            text: 'Test Results'
+        };
+        var subtitle = {
+            text: 'NHS'
+        };
+        var xAxis = {
+            categories: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+            crosshair: true
+        };
+        var yAxis = {
+            min: 0,
+            title: {
+                text: 'Result Value'
+            }
+        };
+        var tooltip = {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        };
+        var plotOptions = {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        };
+        var credits = {
+            enabled: false
+        };
+
+        var series= [{
+            name: 'WBC',
+            data: [61.3, 59.1, 62.9, 60.1, 60.7, 70, 74.9, 67.9, 65.5, 72.6, 66.2, 61]
+        },
+            {
+                name: "[]",
+                data: []
+            },
+            {
+            name: 'Lymphocyes',
+            data: [58.8, 51.4, 58.5, 57.1, 54.6, 63, 68.9, 59.8, 59, 68.2, 54.9, 51.4]
+        }];
+
+        var json = {};
+        json.chart = chart;
+        json.title = title;
+        json.subtitle = subtitle;
+        json.tooltip = tooltip;
+        json.xAxis = xAxis;
+        json.yAxis = yAxis;
+        json.series = series;
+        json.plotOptions = plotOptions;
+        json.credits = credits;
+        $('#barchart').highcharts(json);
+
+    });
+</script>
+
+
+<script language="JavaScript">
+    $(document).ready(function() {
+        var title = {
+            text: 'RBC Results'
+        };
+        var subtitle = {
+            text: 'Source: NHS'
+        };
+        var xAxis = {
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        };
+        var yAxis = {
+            title: {
+                text: 'Results/(Unit)'
+            }
+        };
+        var plotOptions = {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: false
+            }
+        };
+        var series= [{
+            name: 'RBC',
+            data: [4.53, 4.54, 4.49, 4.66, 4.44, 4.22, 4.34, 4.45, 4.38, 4.08, 4.29, 4.51]
+        }
+        ];
+
+        var json = {};
+
+        json.title = title;
+        json.subtitle = subtitle;
+        json.xAxis = xAxis;
+        json.yAxis = yAxis;
+        json.series = series;
+        json.plotOptions = plotOptions;
+        $('#linechart').highcharts(json);
+
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+@import "stylesheet.css";
+
+.me-main{
+    height: 88vh;
+    background-color: white;
+}
+
+.me-row1, .me-row2{
+    display: flex;
+}
+
+.row1-left, .row1-right{
+    width:50%;
+    height: 44vh;
+}
+
+.resultsImg{
+    padding: 10px;
+    width: 95%;
+
+}
