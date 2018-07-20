@@ -1,0 +1,31 @@
+
+.userimg{
+    height:10vh;
+    padding-top: 5vh;
+    padding-left: 40%;
+}
+.quote{
+    helght: 80vh;
+    background-image: url("../assets/bubble.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.quote-text{
+
+    height: 48vh;
+    font-size: 60px;
+    text-align: center;
+    color: antiquewhite;
+    padding-top: 20vh;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+.startimg{
+    padding-left:40%;
+    width:20%;
+    padding-bottom: 5vh;
+}
