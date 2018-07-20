@@ -65,7 +65,7 @@
 }
 
 .contactList{
-  font-size: 80px;
+  font-size: 70px;
   margin:20px;
   list-style-type: none;
 }
@@ -73,6 +73,7 @@
 .contactList li{
   vertical-align: middle;
   margin-bottom: 15px;
+  margin-left:0;
 }
 
 .contactList a{
@@ -93,7 +94,7 @@
   border-radius:50%;
   height:90px;
   width:90px;
-  margin-right: 30px;
+  margin-right: 15px;
   vertical-align: middle;
 }
 
@@ -113,7 +114,7 @@
    background-color:#000
    top: 0;
    left: 0;
-   font-size: 80px;
+   font-size: 70px;
    line-height: 100px;
    height:100px;
 }
@@ -140,7 +141,9 @@
   vertical-align: middle;
 }
 
-
+.buddy h4 {
+  margin: 0;
+}
 
 
 .available{
@@ -155,26 +158,23 @@
  border:8px solid gray; 
 }
 
+
+.backwardImg{
+  height:60px;
+  width:60px;
+}
 .groups h3{
   font-size: 100px;
   margin:0;
 }
 
 
-.recent h3 {
-  font-size: 5vh;
+.recent h3{
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.buddy {
-  display: inline-flex;
-  font-size: 70px;
-}
 
-.buddy h4 {
-  margin: 0;
-}
 
 .thread{
   max-width:100%;
